@@ -1,20 +1,12 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Main from '../layouts/Main.astro';
 
 const profilePicture = "https://i.imgur.com/JPGFE75.jpg";
 ---
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <!-- Look here 👀 -->
-    <div>
+<Main>
+  <div>
       <img
 	  	class="profile__picture" 
         src={profilePicture}
@@ -22,18 +14,17 @@ const profilePicture = "https://i.imgur.com/JPGFE75.jpg";
         width="100px"
         height="100px"
       />
-      <div class="profile__details">
-        <h1>Frau Katerina</h1>
-        <h2>VP of Engineering at Goooogle</h2>
-        <p>
-          Helping developers be excellent and succeed at building scalable
-          products
-        </p>
-      </div>
-    </div>
-  </body>
-</html>
-
+  <div class="profile__details">
+    <h1>Frau Katerina</h1>
+    <h2>VP of Engineering at Goooogle</h2>
+    <p>
+      Helping developers be excellent and succeed at building scalable
+      products
+    </p>
+  </div>
+</div>
+</Main>
+    
 <style>
   .profile {
     display: flex;
