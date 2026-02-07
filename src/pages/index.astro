@@ -1,30 +1,29 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
 import Main from '../layouts/Main.astro';
 
-const profilePicture = "https://i.imgur.com/JPGFE75.jpg";
+const profilePicture = 'https://i.imgur.com/JPGFE75.jpg';
 ---
-<Main>
+
+<Main title='Frau Katarina'>
   <div>
-      <img
-	  	class="profile__picture" 
-        src={profilePicture}
-        alt="Frau Katerina's headshot."
-        width="100px"
-        height="100px"
-      />
-  <div class="profile__details">
-    <h1>Frau Katerina</h1>
-    <h2>VP of Engineering at Goooogle</h2>
-    <p>
-      Helping developers be excellent and succeed at building scalable
-      products
-    </p>
+    <img
+      class='profile__picture'
+      src={profilePicture}
+      alt="Frau Katerina's headshot."
+      width='100px'
+      height='100px'
+    />
+    <div class='profile__details'>
+      <h1>Frau Katerina</h1>
+      <h2>VP of Engineering at Goooogle</h2>
+      <p>
+        Helping developers be excellent and succeed at building scalable
+        products
+      </p>
+    </div>
   </div>
-</div>
 </Main>
-    
+
 <style>
   .profile {
     display: flex;
