@@ -47,3 +47,14 @@ import ThemeToogler from './ThemeToogler.astro';
     text-decoration: none;
   }
 </style>
+
+<script>
+  const { pathname } = window.location;
+  const activeNavigationElement = document.querySelector(
+    `nav a[href="${pathname}"]`,
+  );
+
+  if (activeNavigationElement) {
+    activeNavigationElement.classList.add('active');
+  }
+</script>

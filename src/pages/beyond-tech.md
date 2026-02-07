@@ -1,9 +1,12 @@
 ---
-title: Beyound tech
-layout: ../layouts/Main.astro
+layout: ../layouts/Blog.astro
+poster: "/images/road-trip.jpg"
+title: "Beyond Technology"
+subtitle: "Humans are multi-faceted. Beyond tech, I indulge in the following:"
 ---
-- 5X Marathoner
+
+- 5X **Marathoner**
 - Olympic gold medalist
-- Fashion model
+- Fashion _model_
 - Michellin star restaurant owner
 - Adviser to the vice president
