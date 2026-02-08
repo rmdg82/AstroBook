@@ -1,0 +1,12 @@
+---
+import Main from '../layouts/Main.astro';
+import CounterReact from '../components/counter.jsx';
+---
+
+<Main title='Counter'>
+  <p>
+    This is a simple counter that increments every second. It demonstrates how
+    to use Astro's reactivity features.
+  </p>
+  <CounterReact client:visible />
+</Main>
