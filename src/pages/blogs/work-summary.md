@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/Blog.astro
+layout: ../../layouts/Blog.astro
 poster: '/images/work-summary.jpg'
 title: 'Work summary'
 subtitle: 'A brief summary of my work:'
