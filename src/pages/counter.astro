@@ -1,6 +1,8 @@
 ---
 import Main from '../layouts/Main.astro';
-import CounterReact from '../components/counter.jsx';
+import CounterReact from '../components/CounterReact.jsx';
+import CounterPublisherReactStore from '../components/CounterPublisherReactStore';
+import CounterReaderReactStore from '../components/CounterReaderReactStore';
 ---
 
 <Main title='Counter'>
@@ -9,4 +11,15 @@ import CounterReact from '../components/counter.jsx';
     to use Astro's reactivity features.
   </p>
   <CounterReact client:visible />
+
+  <br />
+  <p>This counter is a publisher for a counter</p>
+  <CounterPublisherReactStore client:visible />
+
+  <br />
+  <p>
+    This counter is a subscriber to the publisher above. It will update whenever
+    the publisher updates.
+  </p>
+  <CounterReaderReactStore client:visible />
 </Main>
